@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*Permite deslizar al hacer click a los links del menu*/
+    scroll-behavior: smooth;
+
+}
+/*Menu*/
+.contenedor-header{
+    background-color:#212121;
+    position: fixed;
+    width: 100% ;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: "Anton";
+    font-size: 36px;
+    color:#00796B;
+    text-decoration: none ;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #00796B;
+}
+.nav-responsive{
+    background-color:#00796B ;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/*SECCION INICIO*/
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(/img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenedor-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenedor-banner img{
+    margin-top: 40px;
+    border: 10px solid #ffffff;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenedor-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: "Anton";
+}
+.inicio .contenedor-banner h2{
+    font-weight: normal;
+    font-size: 15px;
+    font-family: "Anton";
+}
+.inicio .contenedor-banner .redes a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42px;
+    height:42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenedor-banner .redes a:hover{
+    background-color:#00796B ;
+}
+/*SECCION SOBRE MI*/
+.about{
+    background-color:#1e2326 ;
+    color: white;
+    padding: 50px 20px;
+}
+.about .contenido-seccion{
+    max-width: 1100px;
+    margin: auto ;
+}
+.about h2{
+    font-size: 48px ;
+    font-family: "Anton";
+    text-align: center;
+    padding: 20px 0;
+}
+.about .contenido-seccion p{
+   font: 18px;
+   line-height: 22px;
+   margin-bottom: 20px;
+}
+.about .contenido-seccion p span{
+    color:#00796B ;
+    font-weight: bold;
+}
+.about .fila{
+    display: flex;
+}
+.about .fila .col{
+    width: 50%;
+}
+.about .fila .col h3{
+    font-size: 28px ;
+    font-family: "Anton";
+    margin-bottom: 25px;
+}
+.about .fila .col ul{
+    list-style: none;
+}
+.about .fila .col ul li{
+    margin: 12px 0;
+}
+.about .fila .col ul li strong{
+    display: inline-block;
+    color: #00796B;
+    width: 80px;
+}
+.about .fila .col ul li span{
+    background-color: #00796B;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.about .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .fila .col .contenedor-intereses .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: #212121;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.about .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #00796B;
+}
+.about .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.about button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    /*width: fit-content;*/
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+.about button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00796B;
+    z-index: -1;
+    transition: 1s;
+}
+.about button:hover .overlay{
+    width: 100%;
+}
+/*SECCION SKILLS*/
+.skills{
+    background-color:#252A2E ;
+    color: white;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto ;
+}
+.skills h2{
+    font-size: 48px ;
+    font-family: "Anton";
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 33.33%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px ;
+    font-family: "Anton";
+    margin-bottom: 25px;
+}
+.skills .fila  span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #00796B ;
+    border-radius: 8px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+/*SECCION CARRERA*/
+.carrera{
+    background-color:#1E2326 ;
+    color: white;
+    padding: 50px 20px;
+}
+.carrera .contenido-seccion{
+    max-width: 1100px;
+    margin: auto ;
+}
+.carrera h2{
+    font-size: 48px ;
+    font-family: "Anton";
+    text-align: center;
+    padding: 20px 0;
+}
+.carrera .fila{
+    display: flex;
+}
+.carrera .fila .col{
+    width: 49%;
+    padding: 0 20px ;
+}
+.carrera .fila .col h3{
+    font-size: 28px ;
+    font-family: "Anton";
+    margin-bottom: 25px;
+    text-align: center;
+}
+.carrera .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.carrera .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.carrera .fila .item .casa{
+    color: #1c8698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.carrera .fila .item .fecha{
+    display: block;
+    color: #1c8698;
+    margin-bottom: 10px;
+}
+.carrera .fila .item p{
+    line-height: 24px;
+}
+/*SECCION PORTAFOLIO*/
+.portafolio{
+    background-color:#252A2E;
+    color: white;
+    padding: 50px 20px;
+}
+.portafolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto ;
+}
+.portafolio h2{
+    font-size: 48px ;
+    font-family: "Anton";
+    text-align: center;
+    padding: 20px 0;
+}
+.portafolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portafolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portafolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portafolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portafolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portafolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portafolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portafolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+.contacto{
+    background-image: url(/img/contact_bg.png);
+    background-color: #1e2326;
+    color: white;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family:"Anton";
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: white;
+}
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: #00796B;
+    cursor: pointer;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+
+footer{
+    background-color: #252A2E;
+    color: white;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes {
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42px;
+    height:42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .redes a:hover{
+    background-color:#00796B ;
+}
+footer .up{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1c8698;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .about .fila{
+        display: block;
+    }
+    .about .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .carrera .fila{
+        display: block;
+    }
+    .carrera .fila .col{
+        width: 90%;
+    }
+    .carrera .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portafolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portafolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}

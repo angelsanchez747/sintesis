@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Angel Sanchez | DEV</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ANGEL</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#about"onclick="seleccionar()">INFO</a></li>
+                    <li><a href="#skills"onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#carrera"onclick="seleccionar()">CARRERA</a></li>
+                    <li><a href="#portafolio"onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarquitarmenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--Seccion INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="" srcset="">
+            </div>
+            <h1>ANGEL SANCHEZ</h1>
+            <H2>FullStack Dev -- Test Automation Engineer</H2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-gitlab"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                
+            </div>
+        </div>
+    </section>
+    <!--Seccion ABOUT-->
+    <section name="" id="about" class="about">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>Hola, soy Angel Sanchez.</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias fugiat vitae possimus quisquam porro ab accusamus dolorem? Beatae laborum illo a officia, fuga quae mollitia ratione, in nostrum similique accusantium.</p>
+
+        <div class="fila">
+    <!--Datos Personales-->
+        <div class="col">
+        <h3>Datos Personales</h3>
+        <ul>
+            <li>
+                <strong>Email:</strong>
+                angelsanchez747@gmail.com
+            </li>
+            <li>
+                <strong>Telefono:</strong>
+                +51 954 266 312
+            </li>
+            <li>
+                <strong>Website:</strong>
+                https://angelsanchez747.guthub.io
+            </li>
+            <li>
+                <strong>Direccion:</strong>
+                Aso. Suiza Peruana Mz A LT 9 Lima Peru
+            </li>
+            <li>
+                <strong>Cargos</strong>
+                <span>Freelance</span>
+            </li>
+        </ul>
+    </div>
+    <!--Intereses-->
+    <div class="col">
+        <h3>Intereses</h3>
+        <div class="contenedor-intereses">
+            <div class="intereses">
+                <i class="fa-brands fa-xbox"></i>
+                <span>JUEGOS</span>
+            </div>
+        <div class="contenedor-intereses">
+            <div class="intereses">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+                </div>
+        </div>
+        <div class="contenedor-intereses">
+            <div class="intereses">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+                </div>
+        </div>
+    </div>
+        <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+        </div>
+    </section>
+    <!--Seccion SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Frontend Skills-->
+                <div class="col">
+                    <h3>Frontend Skills</h3>
+                    <div class="skill">
+                        <span><i class="fa-brands fa-square-js"></i>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-brands fa-html5"></i>Html & Css<i class="fa-brands fa-css3"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-brands fa-react"></i>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-brands fa-angular"></i>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-brands fa-git-alt"></i>GIT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Backend Skills-->
+                <div class="col">
+                    <h3>Backend Skills</h3>
+                    <div class="skill">
+                        <span><i class="fa-brands fa-python"></i>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-brands fa-node-js"></i>NodeJS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-sharp fa-solid fa-database"></i>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MongoDB</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span><i class="fa-brands fa-docker"></i>Docker</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Test Automation Skills-->
+                <div class="col">
+                    <h3>TAE Skills</h3>
+                    <div class="skill">
+                        <span>Cypress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SoapUI</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Postman</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Playwright</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JMeter</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills-->
+                <div class="col">
+                    <h3>Tools</h3>
+                    <div class="skill">
+                        <span>Jira/Xray</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Scrum</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Sheet/Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Linux/Windows</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Github/Gitlab</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion CARRERA-->
+    <section id="carrera" class="carrera">
+        <div class="contenido-seccion">
+            <h2>CARRERA</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Educacion</h3>
+                    <div class="item">
+                        <h4>Desarrollador Front-End</h4>
+                        <span class="casa">Fundacion Carlos Slim</span>
+                        <span class="fecha">2018</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere commodi omnis laudantium ut voluptatem error? Nobis cumque eaque soluta saepe inventore, similique natus quaerat, delectus magni minima, iste eligendi reprehenderit.</p>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Experiencia</h3>
+                <div class="item">
+                    <h4>Analista QA</h4>
+                    <span class="casa">UPEX</span>
+                    <span class="fecha">OCTUBRE 2022- Actualmente</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere commodi omnis laudantium ut voluptatem error? Nobis cumque eaque soluta saepe inventore, similique natus quaerat, delectus magni minima, iste eligendi reprehenderit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--FORMULARIO-->
+                <div class="col">
+                <input type="text" placeholder="Tu Nombre">
+                <input type="number" placeholder="Tu Numero telefonico ">
+                <input type="email" placeholder="Tu email">
+                <input type="text" placeholder="Asunto">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Enviar</span>
+                  </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION FOOTER -->
+    <footer>
+        <a href="#inicio" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-gitlab"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
